@@ -19,14 +19,21 @@ function summonCaptainPlanet(planeteerCalls){
 }
 
 function longPlaneteerCalls(words) {
+  var check = []
   var i = 0;
   for (i = 0; i < words.length; i++) {
     if (words[i].length > 4) {
-      return true;
+      check.push(true);
     } else {
-      return false;
+      check.push(false);
     }
   }
+  for (i = 0; i < check.length; i++) {
+    if (check[i] === true) {
+      return true;
+    }
+  }
+  return false;
 }
 
 function findTheCheese (foods) {
