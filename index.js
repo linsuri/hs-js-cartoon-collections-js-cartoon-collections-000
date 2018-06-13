@@ -49,3 +49,14 @@ function findTheCheese (foods) {
   }
   return 'no cheese!';
 }
+
+function wordsWithB(words) {
+  var containsB = [];
+  var i = 0;
+  for (i = 0; i < words.length; i++) {
+    if (words[i].includes('b')) {
+      containsB.push(words[i])
+    }
+  }
+  return containsB;
+}
